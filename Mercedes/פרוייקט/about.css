@@ -1,0 +1,39 @@
+a {
+    background-color: black;
+    color: navajowhite;
+    align-items: center;
+    text-decoration: none;
+}
+
+fieldset {
+    text-align: center;
+    
+}
+
+.inner-links {
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+/* .inner-links>a::after { */
+/* content: '|'; */
+/* } */
+
+body {
+    background-image: url(../פרוייקט/tecnology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .technology {
+    background-image: url(./image-of-cars/about-page/tecnology.jpg);
+} */
+
+.my-element{
+animation-name: my- animation;
+animation-duration: 2s;
+animation-timing-function:ease ;
+animation-iteration-count: infinite;
+
+
+}

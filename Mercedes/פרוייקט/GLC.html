@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLC</title>
+    <link rel="icon" href="./איקון.png">
+    <link href="./pratim.css" rel="stylesheet" />
+
+    <style>
+        .animated-text {
+            font-size: 1.5em;
+            position: relative;
+            animation-name: slide-down;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+
+        @keyframes slide-down {
+            0% {
+                opacity: 0;
+                transform: translate(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+
+    <header>
+        <nav class="animated-text">
+            <a href="../HOME.HTML" class="but"> דף הבית</a>
+            <a href="./about.html" class="but"> אודות</a>
+            <a href="./cars.html" class="but"> דגמים</a>
+            <a href="./chart.html" class="but"> טבלה </a>
+        </nav>
+        <div class="name">
+            <a href="tel:*9996">*9996|</a>
+        </div>
+        <div class="img">
+            <img src="./image-of-cars/סמל.jpg">
+        </div>
+    </header>
+    <main>
+        <div class="back">
+            <br><br>
+            <a href="./cars.html"> בחזרה לרכבים</a>
+        </div>
+        <u>
+            <h1>בנה את ה-GLC שלך</h1>
+        </u>
+        <br>
+        <div class="normal">
+            <label for="finish">בחר רמת גימור</label>
+            <input list="finish" id="רמת גימור" name="6">
+            <datalist id="finish">
+                <option value="Premium">Premium</option>
+                <option value="Premium AMG Line">Premium AMG Line</option>
+                <option value="Platinum">Platinum</option>
+                <option value="Platinum AMG Line">Platinum AMG Line</option>
+            </datalist>
+            <br /><br />
+            <label for="color">צבע</label>
+            <input list="color" id="צבע" name="6">
+            <datalist id="color">
+                <option value="שחור">שחור</option>
+                <option value="אפור">אפור</option>
+                <option value="לבן">לבן</option>
+                <option value="לבן מבריק">לבן מבריק</option>
+                <option value="חום">חום</option>
+                <option value="שחור מט">שחור מט</option>
+            </datalist>
+            <br />
+        </div>
+        <div class="show">
+            <h6>תצוגת פנים:<h6>
+                    <img src="./image-of-cars/disign car/GLC/פנים.jpg" width="300px" alt="EQB">
+                    <h6>תצוגת חוץ:<h6>
+                            <img src="./image-of-cars/disign car/GLC/חוץ.jpg" width="300px" alt="EQB">
+        </div>
+        <div class="cards">
+            <div>
+                <h3>ביצועים</h3>
+                <p>מרצדס GLC200 4MATIC מונע על ידי מנוע 4 צילינדרים חדש עם הספק של 204 כוחות סוס, אליו מתווספת מערכת
+                    חשמל
+                    48V עם
+                    EQ
+                    BOOST של 20.5 כ"ס. המנוע משודך לתיבת 9G-TRONIC ולמערכת הנעה כפולה 4MATIC ויחידת הכוח מספקת ביצועים
+                    מרשימים
+                    בכביש
+                    ובשטח עם תאוצה מ-0-100 תוך 7.8 שניות ומהירות מרבית של 221 קמ"ש.</p>
+
+                <h3>נוחות</h3>
+                <p>מרצדס GLC200 4MATIC מצויד בחבילת אבזור עשירה הכוללת בין השאר ריפודי ARTICO, מושבים קדמיים חשמליים עם
+                    זכרונות,
+                    גג
+                    שמש פנורמי נפתח חשמלית, תא מטען נפתח חשמלית, סביבת נהג דיגיטלית ומערכת מולטימדיה עם מסך מרכזי "11.9,
+                    שליטה
+                    קולית, טעינה אלחוטית לנייד* ועוד. ברמות הגימור AMG Line מתווספים בין השאר הגה ספורט קטום ודוושות
+                    אלומיניום
+                    ואילו
+                    רמת גימור Platinum כוללת פריטים יוצאי דופן כמו פתיחת תא מטען ללא מגע יד, מערכת שמע של Burmester,
+                    מתלי
+                    אוויר
+                    אדפטיביים והיגוי אחורי.
+
+                </p>
+            </div>
+            <div>
+                <h3>טכנולוגיה</h3>
+                <p>
+                    מרצדס GLC200 4MATIC מצויד בטכנולוגיות פורצות דרך בתחום ממשק המשתמש, ההנעה, הקישוריות והנוחות. חבילת
+                    הבטיחות
+                    האקטיבית שלו כוללת בין השאר מערכות כגון שמירה אקטיבית על נתיב הנסיעה, בקרת שיוט אדפטיבית, ניטור
+                    שטחים
+                    מתים
+                    אקטיבי, בלימת חירום אוטונומית ומערכות נוספות שתורמות להפחתת הלחץ והעומס מהנהג.</p>
+            </div>
+        </div>
+        <a href="./pratim.html" target="_blank" class="but">
+            <H2>לתאום פגישה</H2>
+        </a>
+        <br><br><br><br>
+    </main>
+</body>
+
+</html>

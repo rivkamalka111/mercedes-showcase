@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טבלת רכבים</title>
+    <link rel="icon" href="./איקון.png">
+    <link rel="stylesheet" href="about.css">
+    <link href="./HOME.CSS" rel="stylesheet" />
+</head>
+<style>
+    .animated-text {
+        font-size: 1.5em;
+        position: relative;
+        animation-name: slide-down;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+    }
+
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translate(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid navajowhite;
+    }
+
+    th,
+    td {
+        border: 1px solid navajowhite;
+        padding: 8px;
+    }
+</style>
+
+<body dir="rtl">
+    <header>
+        <nav class="animated-text">
+            <a href="../HOME.HTML" class="but"> דף הבית</a>
+            <a href="./about.html" class="but"> אודות</a>
+            <a href="./cars.html" class="but"> דגמים</a>
+            <a href="./chart.html" class="but"> טבלה </a>
+        </nav>
+        <div class="name">
+            <a href="tel:*9996">*9996|</a>
+        </div>
+        <div class="img">
+            <img src="./image-of-cars/סמל.jpg">
+        </div>
+    </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table class="table" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>דגם:</th>
+                    <th>רמת אבזור בטיחות</th>
+                    <th>דרגת זיהום אויר</th>
+                    <th>מהירות מרבית</th>
+                    <th>שניות תאוצה ל100 קמ"ש</th>
+                    <th>כח סוס</th>
+                    <th>מחיר</th>
+                    <th>תמונה</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> EQB</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>160</td>
+                    <td>8</td>
+                    <td>228</td>
+                    <td>475,458</td>
+                    <td><img src="./image-of-cars/EQB/מרצדס 18.JPG" width="140px" alt="EQB"></td>
+                </tr>
+                <tr>
+                    <td>G class</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td>210</td>
+                    <td>5.9</td>
+                    <td>422</td>
+                    <td>1,435,061</td>
+                    <td><img src="./image-of-cars/G class/לטבלה 2.JPG" width="140px" alt="G class"></td>
+                </tr>
+                <tr>
+                    <td>GLC</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>221</td>
+                    <td>7.8</td>
+                    <td>204</td>
+                    <td>525,061</td>
+                    <td><img src="./image-of-cars/GLC/לטבלה 3.JPG" width="140px" alt="GLC"></td>
+                </tr>
+                <tr>
+                    <td>SL class</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>275</td>
+                    <td>4.9</td>
+                    <td>381</td>
+                    <td>1,295,061</td>
+                    <td><img src="./image-of-cars/SL class/לטבלה 4.JPG" width="140px" alt="SL class"></td>
+                </tr>
+                <tr>
+                    <td>C corbio class</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td>250</td>
+                    <td>6.3</td>
+                    <td>258</td>
+                    <td>560,961</td>
+                    <td><img src="./image-of-cars/C cabrio class/לטבלה 1.JPG" width="140px" alt="C carbio class"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br><br><br><br>
+    </main>
+    <footer>
+        <div class="home-slider">
+            <a href="./pratim.html" class="but">לתאום פגישה</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרכבים שלנו</title>
+    <link rel="icon" href="./איקון.png">
+    <link rel="stylesheet" href="about.css">
+    <link href="./HOME.CSS" rel="stylesheet" />
+    <style>
+        fieldset a {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<style>
+    .animated-text {
+        font-size: 2em;
+        position: relative;
+        animation-name: slide-down;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+    }
+
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translate(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+    div {
+        display: inline-block;
+    }
+
+    .form {
+        display: inline-block;
+        width: 10rem;
+        padding: 1rem;
+        /* height: 30rem; */
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    img {
+        padding: -5rem;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    legend {
+        font-size: 1.5em;
+    }
+
+    .card-container fieldset {
+        flex-basis: 25%;
+        max-height: max-content;
+    }
+
+    video {
+        object-fit: cover;
+    }
+</style>
+
+<body dir="rtl">
+    <header>
+        <nav class="animated-text">
+            <a href="../HOME.HTML" class="but"> דף הבית</a>
+            <a href="./about.html" class="but"> אודות</a>
+            <a href="./cars.html" class="but"> דגמים</a>
+            <a href="./chart.html" class="but"> טבלה </a>
+        </nav>
+        <div class="name">
+            <a href="tel:*9996">*9996|</a>
+        </div>
+        <div class="img">
+            <img src="./image-of-cars/סמל.jpg">
+        </div>
+    </header>
+    <main style="    grid-column: 1/6;    ">
+        <h4> הרכבים שלנו</h4>
+        <!-- <Div class="cards-container"></Div> -->
+        <!-- <form autocomplete="on"> -->
+        <div class="card-container">
+            <fieldset class="form">
+                <legend> EQB</legend>
+                <div class="card">
+                    <img src="./image-of-cars/EQB/מרצדס 15.JPG" width="300px" alt="EQB">
+                    <h3><a href="./EQB.html" target="_blank">
+                            <H2>EQB</H2>
+                        </a></h3>
+                    <h3>
+                        מציעה שילוב יוצא דופן בין יוקרה חשמלית לבין פונקציונליות ורמת שימוש גבוהה
+                    </h3>
+                    <p>
+                        משפחתית<br>
+                        חשמלית<br>
+                        7 מקומות
+                    </p>
+                    <details>
+                        <summary>מבחן ריסוק</summary>
+                        <video width="500" height="350" controls>
+                            <source src="./VID-20231130-WA0029.mp4" type="video/mp4">
+                        </video>
+                    </details>
+                </div>
+            </fieldset>
+
+            <fieldset class="form">
+                <legend>G class</legend><br />
+
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./image-of-cars/G class/מרצדס 9.JPG" width="300px" alt="G class">
+                        <h3 ><a href="./G class.html" target="_blank">
+                                <H2>G class</H2>
+                            </a></h3>
+                        <h3>
+                            ההופעה הייחודית שלו משלבת בין קשיחות ועמידות לבין יוקרה ופאר.
+                        </h3>
+                        רכב שטח <br>
+                        מסך גדול<br>
+                        מקומות 5
+                        </p>
+                        <details>
+                            <summary>מבחן ריסוק</summary>
+                            <video width="500" height="350" controls>
+                                <source src="./VID-20231130-WA0029.mp4" type="video/mp4">
+                            </video>
+                        </details>
+
+                    </div>
+            </fieldset>
+
+            <fieldset class="form">
+                <legend> GLC</legend><br />
+
+                <div class="card">
+                    <img src="./image-of-cars/GLC/מרצדס 21 (1).JPG" width="300px" alt="GLC">
+                    <h3><a href="./GLC.html" target="_blank">
+                            <H2>GLC</H2>
+                        </a></h3>
+                    <h3>
+                        משלב בין עיצוב אלגנטי- ספורטיבי, לבין סגנון של רכב שטח
+                    </h3>
+                    קומפקטי<br>
+                    עיצוב ספורטיבי<br>
+                    צריכת דלק: 12.8
+                    </p>
+                    <details>
+                        <summary>מבחן ריסוק</summary>
+                        <video width="500" height="350" controls>
+                            <source src="./VID-20231130-WA0029.mp4" type="video/mp4">
+                        </video>
+                    </details>
+
+                </div>
+            </fieldset>
+
+            <fieldset class="form">
+                <legend> SL class</legend><br />
+
+                <div class="card">
+                    <img src="./image-of-cars/SL class/מרצדס 28.JPG" width="320px" alt="SL class">
+                    <h3><a href="./SL class.html" target="_blank">
+                            <H2>SL class</H2>
+                        </a></h3>
+                    <h3>
+                        מאפשר להינות מחוית נסיעה מסעירה ויוצאת דופן לצד נוחות ברמה הגבוהה ביותר.
+                    </h3>
+                    מערכת בטיחות מתקדמת<br>
+                    ביצועים חסרי תחרות<br>
+                    מכונית ספורט
+                    </p>
+                    <details>
+                        <summary>מבחן ריסוק</summary>
+                        <video width="500" height="350" controls>
+                            <source src="./VID-20231130-WA0029.mp4" type="video/mp4">
+                        </video>
+                    </details>
+                </div>
+            </fieldset>
+
+            <fieldset class="form">
+                <legend> C cabrio class</legend><br />
+
+                <div class="card">
+                    <img src="./image-of-cars/C cabrio class/מרצדס 2.JPG" width="360px" alt="C cabrio class">
+                    <h3><a href="./C cabrio class.html" target="_blank">
+                            <H2>C cabrio class</H2>
+                        </a></h3>
+                    <h3>
+                        This is the content of card 4.
+                    </h3>
+                    תיבת הילוכים מתקדמת <br>
+                    שילוב של יוקרה מודרנית <br>
+                    גג נפתח
+                    </p>
+                    <details>
+                        <summary>מבחן ריסוק</summary>
+                        <video width="500" height="350" controls>
+                            <source src="./VID-20231130-WA0029.mp4" type="video/mp4">
+                        </video>
+                    </details>
+                    <div>
+            </fieldset>
+        </div>
+        <!-- <form> -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <div class="home-slider">
+            <a href="./pratim.html" class="but">לתאום פגישה</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

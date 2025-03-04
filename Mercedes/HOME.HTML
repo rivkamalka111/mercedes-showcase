@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="HOME.CSS" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף הבית</title>
+    <link rel="stylesheet" href="./פרוייקט/about.css">
+    <link href="./פרוייקט/HOME.CSS" rel="stylesheet" />
+</head>
+<style>
+    .animated-text>a {
+        font-size: 1.5em;
+        position: relative;
+        animation-name: slide-down;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+    }
+
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translate(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+
+    body {
+        margin: 0;
+        overflow: hidden;
+        /* יכול להסתיר חלק מהעמוד */
+    }
+
+    video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        /* יכול להקטין או להגדיל תמונה/סרט */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #content {
+        /* זה יופיע רק כשהסרטה נגמרת */
+        display: none;
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+<body dir="rtl">
+    <video controls autoplay>
+        <source src="./פרוייקט/פתיחההההה.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content"></div>
+    <header>
+        <nav class="animated-text">
+            <a href="./HOME.HTML" class="but"> דף הבית</a>
+            <a href="./פרוייקט/about.html" class="but"> אודות</a>
+            <a href="./פרוייקט/cars.html" class="but"> דגמים</a>
+            <a href="./פרוייקט/chart.html" class="but"> טבלה </a>
+        </nav>
+        <div class="name">
+            <a href="tel:*9996">*9996|</a>
+        </div>
+        <div class="img">
+            <img src="./פרוייקט/image-of-cars/סמל.jpg">
+        </div>
+
+    </header>
+    <main>
+
+        <h1> Mercedes-Benz </h1>
+        <div class="uuu">
+            <H3>ברוכים הבאים לעולם שבו שליטה ברכב וחדשנות מתקדמים ומתלכדים,</H3>
+            <H3>שבו מרצדס ניצבת כסמל של מצוינות ללא תחרות, כובשת את ליבם</H3>
+            <H3>ואת מוחותיהם של חובבי עולם ברחבי העולם. הצטרפו אלינו, אל העולם שלנו,</H3>
+            <H3>בו אנו חושפים את כלי הרכב המדהימים ומתעמקים בנתונים המסקרנים </H3>
+            <H3>המציגים את כושר ההמצאה חסר הגבולות ואת ההישגים המדהימים של</H3>
+            <H3>חברת מרצדס האגדית. </H3>
+            <H2>ברוכים הבאים!!!</H2>
+        </div>
+    </main>
+    <footer>
+        <div class="home-slider">
+            <a href="./פרוייקט/pratim.html" class="but">לתאום פגישה</a>
+        </div>
+    </footer>
+    <script>
+        const video = document.querySelector('video');
+
+        video.addEventListener('ended', () => {
+            video.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        });
+        window.addEventListener('load', () => {
+            video.play();
+        });
+    </script>
+</body>
+
+</html>
